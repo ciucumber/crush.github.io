@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit location</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../cssfile/header.css">
+	<!-- <link rel="stylesheet" href="index.css"> -->
+	<script type="text/javascript"
+	src="http://maps.googleapis.com/maps/api/js?sensor=false&language=vi"></script>
+</head>
+<body>
+    <header class="shadow-sm mb-1 mb-lg-5 bg-white rounded sticky" id="body">
+		<div class="menu-header menu-header-font bg-dark d-none d-lg-block">
+			<div class="container">
+				<div class="row p-0">
+					<div class="col-6"></div>
+					<div class="col-12 col-lg-6 p-0">	
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+						  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon color-white"></span>
+						  </button>
+						  <div class="collapse navbar-collapse 	justify-content-end" id="navbarSupportedContent">
+						    <ul class="navbar-nav mt-3 mt-lg-0">
+						      <li class="nav-item active mr-2">
+						        <a class="nav-link text-white" href="#"><i class="fas fa-heart mr-2"></i>Wishlist <span class="sr-only">(current)</span></a>
+						      </li>
+						      <li class="nav-item mr-2">
+						        <a class="nav-link text-white" href="#"><i class="fas fa-compass mr-2"></i>Compare</a>
+						      </li>
+						      <li class="nav-item mr-2">
+						        <a class="nav-link text-white" href="#">
+						          <i class="fas fa-user-circle mr-2"></i>My account
+						        </a>
+						      </li>
+						      <li class="nav-item mr-2">
+						        <span style="cursor: pointer;" class="nav-link text-white"  ><i class="fas fa-sign-in-alt mr-2"></i>Login</span>
+						      </li>
+						    </ul>
+						    
+						    <form class="form-inline my-2 my-lg-0 d-block d-lg-none">
+						      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>	
+						    </form>
+						  </div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content mt-0 pt-2 st">
+			<div class="container">
+				<div class="brach-content position-relative form-responsive mb-2 mb-lg-5">
+					<div class="row">
+						<div class="col-lg-4 d-none d-lg-block"></div>
+						<div class="col-6 col-lg-4 d-flex justify-content-center pr-2">
+							<img height="55" src="./design/brach.png" alt="">
+						</div>
+						<div class="col-4 d-lg-flex justify-content-end align-items-center d-none d-lg-block">
+							<form class="form-inline my-2 my-lg-0 d-none d-lg-block form-search">
+						      <input class="rounded-pill form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						      <button class="btn btn-outline-success rounded-pill my-0 my-sm-0" type="submit">Search</button>
+						    </form>
+						</div>
+						<div class="col-12 d-block d-lg-none position-absolute" style="left: 0">
+							<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
+							  <button class="navbar-toggler bg-light click-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							    <i class="fas fa-bars" id="button"></i>
+							  </button>
+							  <div class="collapse navbar-collapse 	justify-content-center menu-hidden" id="navbarSupportedContent">
+							    <ul class="navbar-nav mt-3 mt-lg-0">
+							      <li class="nav-item">
+							        <a class="nav-link text-uppercase" href="index.html"><i class="fas fa-home mr-2"></i> home <span class="sr-only">(current)</span></a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link text-uppercase" href="#"><i class="fas fa-users mr-2"></i>about us</a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link text-uppercase" href="#"><i class="fas fa-blog mr-2"></i>blog</a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link text-uppercase" href="#"><i class="fas fa-id-card-alt mr-2"></i>contac</a>
+							      </li>
+							      <li class="nav-item">
+							      	<a class="nav-link text-uppercase" href="file:///C:/Users/Laptop88/Desktop/Web-book/login.html"><i class="fas fa-sign-in-alt mr-2"></i>login</a>
+							      </li>
+							    </ul>
+							    <form class="form-inline my-2 my-lg-0 d-block d-lg-none">
+							      <input id="search-form" class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+							      <button style="width: 70px !important;" id="search-buttom" class="btn btn-outline-success my-sm-0" type="submit">Search</button>
+							    </form>
+							  </div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-sticky shadow" id="menu-fixed">
+				<div class="container d-none d-md-block ">
+					<div class="row">
+						<div class="col-4 col-lg-4 d-flex justify-content-start pr-2">
+							<img height="55" src="./design/brach.png" alt="">
+						</div>
+						<div class="col-8 d-flex justify-content-end align-items-center">
+							  <li class="d-inline nav-item position-relative mr-3 active">
+							    <a class="nav-link text-uppercase text-bold pb-1 align-middle" href="index.html">home<i class="ml-2 fas fa-sort-down"></i></a>
+							    <div class="list-group sub-menu">
+								  <a href="#" class="list-group-item list-group-item-action">
+								    Cras justo odio
+								  </a>
+								  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+								  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+								  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+								  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+								</div>
+							  </li>
+							  <li class="d-inline nav-item position-relative mr-3">
+							    <a class="nav-link text-uppercase pb-1 bottom-out align-middle" href="#">about us <i class="ml-2 fas fa-sort-down"></i></a>
+							    <div class="list-group sub-menu">
+								  <a href="#" class="list-group-item list-group-item-action">
+								    Cras justo odio
+								  </a>
+								  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+								  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+								  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+								  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+								</div>
+							  </li> 
+							  <li class="d-inline nav-item position-relative mr-3">
+							    <a class="nav-link text-uppercase pb-1 bottom-out" href="#">blog</a>
+							  </li>
+							  <li class="d-inline nav-item position-relative">
+							    <a class="nav-link text-uppercase pb-1 bottom-out" href="#">contact</a>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-content d-none d-lg-block mt-3 shadow">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<ul class="nav">
+							  <li class="nav-item position-relative mr-3 active pb-1">
+							    <a class="nav-link text-uppercase text-bold pb-2 bottom-out" href="index.html">home</a>
+							  </li>
+							  <li class="nav-item position-relative mr-3">
+							    <a class="nav-link text-uppercase pb-1 bottom-out" href="#">about us</a>
+							  </li> 
+							  <li class="nav-item position-relative mr-3">
+							    <a class="nav-link text-uppercase pb-1 bottom-out" href="#">blog</a>
+							  </li>
+							  <li class="nav-item position-relative">
+							    <a class="nav-link text-uppercase pb-1 bottom-out" href="#">contact</a>
+							  </li>
+							</ul>
+						</div>
+						<div class="col-6 d-flex justify-content-end">
+							<ul class="nav">
+								<li class="nav-item mr-2 position-relative">
+									<a class="nav-link text-uppercase pb-1" href="my-notification.html"><i class="bell-cart fas fa-bell mr-2"></i>notification</a>
+								</li>
+								<li class="nav-item position-relative">
+									<a class="nav-link pb-1" href="cart.html"><i class="bell-cart fas fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+    <div class="list-location">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Sửa địa chỉ</li>
+				</ol>
+            </nav>
+            <div class="row">
+                <div class="col-3">
+                    <div class="user-control">
+                        <div class="user-content d-flex">
+                            <div style="width: 50px; height: 50px; border-radius: 50%;" class="user-avata bg-dark">
+                            </div>
+                            <div class="user-name ml-2 d-flex justify-content-center align-items-center">
+                                <span>Ngô Hiệp</span>
+                            </div>
+                        </div>
+                        <div class="list-group mt-3 list-control">
+                            <a href="user-information.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-user"></i> <span class="ml-3">Thông tin tài khoản</span>
+                            </a>
+                            <a href="my-notification.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-bell"></i> <span class="ml-3">Thông báo của tôi</span></a>
+                            <a href="order-management.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-truck"></i><span class="ml-3">Quản lý đơn hàng</span></a>
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-map-marker-alt px-1"></i><span class="ml-3">Sổ địa chỉ</span></a>
+                            <a href="billing-information.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-credit-card"></i><span class="ml-3">Thông tin thanh toán</span></a>
+                            </div>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-sticky-note pr-1"></i><span class="ml-3">Nhận xét sản phẩm</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="far fa-eye"></i><span class="ml-3">Sản phẩm đã xem</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-heart"></i><span class="ml-3">Sản phẩm đã thích</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-shopping-cart"></i><span class="ml-3">Sản phẩm đã mua</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-star-half-alt"></i><span class="ml-3">Đánh giá của tôi</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-question-circle"></i><span class="ml-3">Hỏi đáp</span>
+                            </a>
+                            <!-- <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-heart"></i><span class="ml-3">Sản phẩm đã thích</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-heart"></i><span class="ml-3">Sản phẩm đã thích</span>
+                            </a> -->
+                        </div>
+                    </div>
+            <div class="col-9">
+                <div class="location">
+                    <div class="title d-flex align-items-center py-3">
+                        <h4>Sửa địa chỉ</h4>
+                    </div>
+                    <div class="location-define p-3 border">
+                        <form action="">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Họ tên</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Số điện thoại</label>
+                                  <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Tỉnh/Thành phố</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Quận/Huyện</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phường xã    </label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Địa chỉ</label>
+                                    <textarea name="" id="" class="form-control" placeholder="Nhập địa chỉ cụ thể"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3 d-flex flex-column">
+                                        <label for="exampleInputPassword1">Loại địa chỉ</label>
+                                        <select class="custom-select form-control w-100" id="inputGroupSelect01">
+                                          <option selected value="1">Nhà riêng</option>
+                                          <option value="2">Công ty</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-check my-4">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Đặt làm địa chỉ mặc định</label>
+                                  </div>
+                                <button type="submit" class="btn btn-outline-danger btn-block">Cập nhật</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 300px;" class="footer bg-dark py-5 mt-5">
+		<div class="container text-center">
+			<p class="text-white">Suspendisse in auctor augue. Cras fermentum est ac fermentum tempor. Etiam vel magna volutpat, posuere eros</p>
+		</div>
+		<div class="way-pay mt-2">
+			<div class="row">
+				<div class="col-4"></div>
+				<div onclick="" class="col-4 d-flex justify-content-center align-items-center mt-4">
+					<img src="./design/payment.png" alt="">
+				</div>
+				<div class="col-4"></div>
+			</div>
+		</div>
+		<div class="content text-center mt-5">
+			<p class="text-white">Copyright © 2020 Bookself. All Right Reserved.</p>
+			<p class="text-white">Design By Xuanhiep</p>
+		</div>
+	</div>
+	<a href="#" class="crunchify-top">↑</a>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+	<script src="../jsfile/user-information.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</body>
+</html>

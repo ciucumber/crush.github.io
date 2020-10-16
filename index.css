@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Ubuntu Mono', monospace; */
+}
+
+body{
+    background: #ff7f7f;
+}
+
+.title h4{
+    font-size: 50px;
+}
+
+form{
+    background: #b615f91c;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #ccc;
+}
+
+.title-form span{
+    font-size: 30px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.content-center{
+    display: none;
+    background: #b615f91c;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #ccc;
+}
+
+.content-center span{
+    font-size: 20px;
+    color: #000;
+}
+
+.result{
+    display: none;
+}

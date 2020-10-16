@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript"
+	src="http://maps.googleapis.com/maps/api/js?sensor=false&language=vi"></script>
+</head>
+<body id="total">
+    <div class="content">
+        <div class="container">
+            <div class="title text-center mt-4">
+				<h4>Xin chào bạn</h4>
+			</div>
+			<div class="form-content" id="form">
+				<form action="" class="border mt-5">
+					<div class="title-form ">
+						<span></span>
+					</div>
+					<div class="form-content">
+						<div class="form-group">
+							<label for="exampleInputEmail1">Họ và tên</label>
+							<input type="text" class="form-control" id="name" placeholder="họ và tên" required>
+						  </div>
+					</div>
+					<div class="form-content row">
+						<div class="col-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Ngày sinh của bạn</label>
+								<input type="text" class="form-control" id="date" placeholder="dd/mm" required>
+							  </div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Năm sinh</label>
+								<input type="text" class="form-control" id="year" placeholder="yy" required>
+							  </div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Chiều cao</label>
+						<input type="text" class="form-control" id="height" placeholder="ex: 170" required>
+					  </div>
+					<button type="button" class="btn btn-block btn-danger mt-3" onclick="clickhere()">Gửi thông tin</button>
+				</form>
+			</div>
+			<div class="content-center mt-5" id="page_1">
+				<span id="text-content"></span><br>
+				<span id="text-age"></span><br>
+				<span id="text-height"></span>
+				<div class="thathinh">
+					<span>Mình hỏi nhỏ nhá:)))</span>
+					<br>
+					<div class="alert alert-primary" role="alert">
+						Bạn có thích mình không?
+					  </div>
+				</div>
+				<div class="confirm row mt-3">
+					<div class="col-6">
+						<button class="btn btn-block btn-warning" id="yes" onclick="yes1()">
+							Có
+						</button>
+					</div>
+					<div class="col-6">
+						<button class="btn btn-block btn-danger" id="no" onclick="no1()">
+							Không
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="result" id="result">
+				<div class="content-result">
+					<div class="row" style="height: 100%;">
+						<div class="col-3 text-white">
+							<h1>Ngô Xuân Hiệp</h1>
+						</div>
+						<div class="col-6">
+							<img src="tenor.gif" alt="">
+						</div>
+						<div class="col-3">
+							<h1 id="girl-name" class="text-white"></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</body>
+</html>
